@@ -23,6 +23,12 @@ in the second terminal:
 ./vendor/bin/sail artisan migrate # answer yes
 ```
 
+in the browser:
+
+```
+http://127.0.0.1
+```
+
 ## Screenshots
 
 ![Screenshot 1](public/screenshots/duck1.png)
