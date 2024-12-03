@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
+}
+
+#app {
+    flex: 1;
+}
+
+.footer {
+    padding: 0.5rem 1rem;
+    /* Minimal padding */
+    background: transparent;
+    /* Optional: Transparent background */
+}
+
+.footer .logo {
+    height: 100px;
+    /* Ensures logo height */
+    display: block;
+    /* Prevents any inline alignment issues */
+}
+
+.footer .columns {
+    align-items: center;
+    /* Vertical alignment for columns */
+}
