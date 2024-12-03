@@ -56,8 +56,6 @@ class UserService
 
         $activeLink = $this->linkService->getActiveByUser($user) ?? $this->linkService->createNewLink($user);
 
-        $this->loginByLink($activeLink);
-
         return $activeLink->code;
     }
 
@@ -65,8 +63,6 @@ class UserService
     {
         $user = $this->registerUser($userData);
         $link = $this->linkService->createNewLink($user);
-
-        $this->loginByLink($link);
 
         return $link->code;
     }
