@@ -11,6 +11,7 @@ git clone git@github.com:PurrProof/lucky-duck-casino.git
 cd lucky-duck-casino/
 composer install
 cp .env.example .env
+php artisan key:generate
 ./vendor/bin/sail up
 ```
 
